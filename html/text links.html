@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Hyperlink Example</title>
+</head>
+
+<body>
+<p>Click fowolling link</p>
+<a href = "https://www.tutorial point.com" target = "self">Tutorial Point</a>
+</br>
+
+<p>Click on the fowolling link</p>
+ <a href = "/html/index.htm" target = "_blank">opens in New</a> | 
+<a href = "/html/index.htm" target = "_self">opens in Self</a> |
+<a href = "/html/index.htm" target = "_parent">opens in Parent</a> |
+<a href = "/html/index.htm" target = "_top">opens in Body</a> |
+</br>
+
+
+<head>
+<base href = "https://www.tutorialspoint.com/">
+</head>
+
+<p>Click fowolling link</p>
+<a href = "/html/index.htm" target = "_blank">HTML Tutorial</a>
+</br>
+
+<head>
+<base href = "https://www.tutorialspoint.com/">
+</head>
+
+<body alink = "#54A250" link = "#040404" vlink = "#F40633">
+<p>Click fowolling link</p>
+<a href = "/html/index.htm" target = "_blank" >HTML Tutorial</a>
+</br>
+
+<p>Click fowolling link</p>
+<a href = "https://www.tutorialpoint.com/page.pdf">Download PDF files</a>
+</br>
+
+#!usr/bin/perl
+
+#Additional HTTP header
+print "Content-Type:application/octet-stream; name = /"Filename/"/r/n";
+print "Content-Disposition:attachment:;name = /"Filename/"/r/n";
+
+# open the target file and list down its content as follows
+ open( FILE, "<File Name" );
+while(read(FILE, $buffer, 100)){
+print("$buffer");    
+}
+
+
+
+
+</body>
+
+</html>

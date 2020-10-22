@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML embed Tag</title>
+   </head>
+	
+   <body>
+      <embed src = "/html/yourfile.mid" width = "100%" height = "60" >
+         <noembed><img src = "yourimage.gif" alt = "Alternative Media" ></noembed>
+      </embed>
+  </br>
+  
+  <embed src = "/html/yourfile.swf" width = "200" height = "200" >
+    <noembed><img src = "yourimage.gif" alt = "Alternative Media" ></noembed>
+ </embed>
+</br>
+  
+<bgsound src = "/html/yourfile.mid">
+         <noembed><img src = "yourimage.gif" ></noembed>
+      </bgsound>
+   </br>
+  
+   <object data = "data/test.htm" type = "text/html" width = "300" height = "200">
+      alt : <a href = "data/test.htm">test.htm</a>
+   </object>
+</br>
+
+<object data = "data/test.pdf" type = "application/pdf" width = "300" height = "200">
+   alt : <a href = "data/test.pdf">test.htm</a>
+</object>
+</br>
+  
+<object data = "data/test.wav" type = "audio/x-wav" width = "200" height = "20">
+   <param name = "src" value = "data/test.wav">
+   <param name = "autoplay" value = "false">
+   <param name = "autoStart" value = "0">
+   alt : <a href = "data/test.wav">test.wav</a>
+</object>
+</br>
+
+<object classid = "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id = "penguin" 
+   codebase = "someplace/swflash.cab" width = "200" height = "300">
+   
+   <param name = "movie" value = "flash/penguin.swf" />
+   <param name = "quality" value = "high" />
+   <img src = "penguin.jpg" width = "200" height = "300" alt = "Penguin" />
+</object>
+</br>
+
+<object classid = "clsid:8ad9c840-044e-11d1-b3e9-00805f499d93" 
+   width = "200" height = "200">
+   <param name = "code" value = "applet.class">
+</object>
+</br>
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,16 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>multiple style rule</title>
+</head>
+<body>
+<h1>
+{
+    color:#36c;
+    font-weight:normal;
+    letter-spacing:.4em;
+    margin-bottom:em;
+    text-transform:lowercase;
+}
+</body>
+<html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Text Input Control</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+   <form>
+      First name: <input type="text" name="first_name" />
+      <br>
+      Last name: <input type="text" name="last_name" />
+      </br>
+
+      User Id : <input type="text" name="user_id" />
+      <br>
+      Password : <input type="password" name="password" />
+      </br>
+
+      Description : <br />
+      <textarea rows="5" cols="50" name="discription">
+          Enter Discription here...
+          </textarea>
+      </br>
+
+      <input type="checkbox" class="form-check-input" name="Maths" value="on">Maths
+      <input type="checkbox" name="Physics" value="on">Physics
+      </br>
+      <div class="alert alert-primary">
+         <input type="radio" name="subject" value="on">Maths
+         <input type="radio" name="subject" value="on">Physics
+      </div>
+      </br>
+
+      <select name="dropdown">
+         <option value="Maths" selected>Maths</option>
+         <option value="Physics" selected>Physics</option>
+      </select>
+      </br>
+      <input type="File" name="fileupload" accept="image/*" />
+      </br>
+      <input type="submit" name="submit" class="btn btn-primary mb-2" value="submit" />
+      <input type="reset" name="reset" class="btn btn-success mb-2" value="reset" />
+      <input type="button" name="ok" class="btn btn-danger mb-2" value="ok">
+      <input type="image" name="imagebutton" class="btn btn-warning mb-2" src="D:/git/returningfish.png"
+         alt="Test Image" />
+      </br>
+
+      <p>This is page 10</p>
+      <input type="hidden" name="pagename" value="10" />
+      <input type="submit" name="submit" value="submit" />
+      <input type="reset" name="reset" value="reset" />
+
+   </form>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Frames</title>
+</head>
+
+<body>
+    <frameset rows="10%,80%,10%">
+        <frame name="top" src="/html/top_frame.htm" />
+        <frame name="main" src="/html/main_frame.htm" />
+        <frame name="bottom" src="/html/bottom_frame.htm" />
+        <noframe>
+            your browser does not support frames 1.
+        </noframe>
+    </frameset>
+    </br>
+    <frameset cols="25%,50%,25%">
+        <frame name="left" src="/html/top_frame.htm" />
+        <frame name="center" src="/html/main_frame.htm" />
+        <frame name="right" src="/html/bottom_frame.htm" />
+        <noframe>
+            your browser does not support frames 2
+        </noframe>
+    </frameset>
+    </br>
+    <frameset cols="200, *">
+        <frame src="/html/menu.htm" name="menu_page" />
+        <frame src="/html/main.htm" name="main_page" />
+        <noframe>
+            your browser does not support frames 3.
+        </noframe>
+    </frameset>
+    <bgcocor="#4a7a49">
+        <a href="http:/www.google.com" target="main_page">Google.</a>
+        <br />
+        <a href="http:/www.microsoft.com" target="main_page">Microsoft.</a>
+        <br />
+        <a href="http:/www.bbc.news.co.uk" target="main_page">BBC News</a>
+        <bgcolr="#b5dcb3" />
+        <h3>This is the main page and content</h3>
+        <p>So now click any link and see the result</p>
+        <br />
+</body>
+
+</html>
