@@ -1,16 +1,36 @@
-<!DOCKTYPE html>
-<html>
-<head>
-<title>multiple style rule</title>
-</head>
-<body>
-<h1>
-{
-    color:#36c;
-    font-weight:normal;
-    letter-spacing:.4em;
-    margin-bottom:em;
-    text-transform:lowercase;
+h1 {
+    color: #36CFFF;
+  }
+
+  h3 {
+    color: blue;
+  }
+
+  h2 {
+    color: yellowgreen;
+  }
+  td{
+    color: darkgreen; 
+    padding: 2px;
+  }
+
+  .a{font-style:italic;font-weight: bold;color:red}
+  .b{font-style:italic;font-weight: bold;color:darkmagenta}
+  .c{background:yellow;}
+  .d{background:darkorange;}
+  .e{background:maroon;}
+  .f{background:teal;}
+  ul{
+      font-variant:small-caps;
+     }
+li{
+  letter-spacing: 5px;
 }
-</body>
-<html>
+tr{
+  text-shadow:1px blue ;
+}
+b{
+  letter-spacing: 6px;
+}
+
+

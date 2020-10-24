@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>This is document title</title>
-<style>
-<h1>
- {
-    color:#36cfff;
+p.ele1{
+ border:1px solid;
+ border-bottom-color:#009900; /*green*/     
+border-top-color:#FF0000 ;/*red*/
+border-left-color:#330000;/*black*/
+border-right-color:#0000CC;/*blue*/
 }
-</style>
-</head>
-<body>
-<h1>Hello World !</h1>
-</body>
-</html>
+p.ele2{
+border:1px solid;
+border-color:#009900;/*green*/ 
+}
