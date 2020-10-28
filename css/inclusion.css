@@ -1,0 +1,18 @@
+body {
+    background-color:linen;
+}
+
+h1 {
+    color:maroon;
+    margin-left: 40px;
+}
+ 
+    .red{
+          color:royalblue;
+          font-size:20px;
+          font-style:italic;
+          background:yellow;
+          letter-spacing: 5px;
+          font-variant:small-caps;
+          margin-top:15px;
+        }
