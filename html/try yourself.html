@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anon   ymous"></script>
+
+    <script>
+        function myfunction1() {
+            document.getElementById("demo1").innerHTML = "paragraph changed";
+        }
+        
+    </script>
+</head>
+
+<body>
+    <!-------Date and Time------------>
+    <button type="button" class ="btn btn-primary" onclick="document.getElementById('demo').innerHTML=Date()" style="width:500px">
+        Click me to display Date and Time</button>
+    <p id="demo"></p>
+    ------------------------------------------------------------------------------------------------------------</br>
+    <!-------Bulb  On/Off--------->
+    <button onclick="document.getElementById('myImage')" .src='https://www.w3schools.com/js/pic_bulbon.gif'>Turn on the
+        bulb</button>
+    <img id="myImage" src='https://www.w3schools.com/js/pic_bulboff.gif' style="width:200px">
+    <button onclick="document.getElenmentById('myImage')" .src='https://www.w3schools.com/js/pic_bulboff.gif'>Turn off
+        the light</button></br>
+
+    ------------------------// Js WhereTo
+    //--------------------------------------------------------------------------------------></br>
+
+    ----------------Function in HEAD Paragraph
+    changed---------------------------------------------------------------------------
+    <!-------Function in HEAD    Paragraph changed--------->
+
+    <h1>A Web page</h1>
+    <p id="demo4">A Paragraph</p>
+    <button type="button" onclick="myfunction1()">Try It</button>
+
+
+    ---------Function in Body Function
+    changed--------------------------------------------------------------------------------------------------------------------------------------------------</br>
+    <!-------Function in Body    Function changed--------->
+    <h1>A Web page</h1>
+    <p id="demo4a">A Paragraph</p>
+    <button type="button" onclick="myFunction3x('demo4a')">Try It</button>
+
+    <script>
+        function myFunction3x() {
+            document.getElementById("demo4a").innerHTML = " changed.";
+        }
+    </script></br>
+
+
+    ------------------External file extension .js
+    --------------------------------------------------------------------------------------------------------------------------------------------</br>
+    <!------script in External file extension .js and can located i <body> or in <head>------>
+
+    <h2>External file</h2>
+    <p id="demo3a">A paragraph</p>
+    <button type="button" onclick="myFunction1a('demo3a')">Try It</button>
+    <p>(myFunction is stored in external file named "myscript.js")</p>
+
+
+
+    <iframe src="background.html" alt="Test Image"></iframe></br>
+
+
+
+
+    <p id="demo3">A Paragraph.</p>
+    <button type="button" onclick="myFunction3('demo3')">Try it</button>
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+    <script src="./../javascript/myScript.js"></script>
+
+
+
+    ------------------------External refrences--------------------------------------------------------------------------------------------------------------------------------------</br>
+    <!-----External refrences------>
+    <h2>External JavaScript</h2>
+
+    <p id="demo5">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction5()">Try it</button>
+
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+
+    <script src="myScript.js"></script></br>
+
+
+
+
+    ---------------------------------------------------------// Js Output
+    //---------------------------------------------------------------</br>
+
+    --------------------------------HTML element using
+    innerHTML-------------------------------------------------------------------
+    <!---------HTML element  using innerHTML--------->
+
+    <p id="demo6"></p>
+    <script>
+        document.getElementById("demo6").innerHTML = 5 + 6;
+    </script></br>
+
+    -----------------------------HTML Output using
+    document.write()---------------------------------------------------------------------------------</br>
+    <script>
+        document.write(5 + 6);
+    </script></br>
+
+
+    <button type="button" onclick="document.write(5+6)">Try it</button></br>
+
+    ----------------------------Alert box using
+    window.alert()--------------------------------------------------------------------------------------------------</br>
+
+    <script>
+        window.alert(5 + 6);
+        alert(5 + 6);
+    </script>
+    <p>It will show the result in windows alert box</p></br>
+
+    ---------------------------Browser Console using
+    console.log()--------------------------------------------------------------------------------------------------</br>
+
+    <script>
+        console.log(5 + 6);
+    </script></br>
+    <div class="mt-5"></div>
+
+    --------------------------------Javascript
+    Print---------------------------------------------------------------------------------------------------------</br>
+
+    </script></br>
+
+    <button onclick="window.print()">Print this Page</button></br>
+
+
+
+    <div class="mb-5"></div>
+
+    -----------------------------------// Javascript Ststement //--------------------------------------------------------------------------</br>
+
+    ----------------------------------Example of javascript statement------------------------------------------------------</br>
+    <div class="mb-5"></div>
+    <p id="demo7"></p>
+    <script>
+        var x, y, z;
+        x = 5;
+        y = 6;
+        z = x + y;
+        document.getElementById("demo7").innerHTML = z;
+    </script>
+
+    --------------------------------Javascript Line Lenth and Line Break------------------</br>
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo8"></p>
+    <script>
+        document.getElementById("demo8").innerHTML = "hello";
+        "Hello Sachin";    
+    </script>
+
+    -----------------------------------Javascript Code Block-------------------------------</br>
+
+    <button type="button" onclick="myFunction15()">Click Me!</button>
+
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo9").innerHTML = "Hello Sachin";
+            document.getElementById("demo10").innerHTML = "What are you doing";
+        }
+    </script></br>
+
+
+    --------------Javascxript Syntax, two type 1. fixed(literal) and------2.variables(variable)----------------------------------------------</br>
+    ------------Fixed(literals)--two syntax type 1. numbers with or without decimals---------</br>
+    <p id="demo11"></p>
+
+    <script>
+        document.getElementById("demo11").innerHTML = 10.50;
+    </script>
+
+
+    ---------2. Strings in single or double
+    quotes-----------------------------------------------------------------------
+    <p id="demo12"></p>
+
+    <script>
+        document.getElementById("demo12").innerHTML = 'John Doe';
+    </script></br>
+
+    -------------------Js variables
+    --------------------------------------------------------------------------------------------------------------
+
+    <p id="demo1a"></p>
+
+    <script>
+        var x;
+        x = 6;
+        document.getElementById("demo1a").innerHTML = x;
+    </script></br>
+
+    ------------------------------------Javascript Operators- uses airthmatic operators(+
+    ,-,/-,*)-----------------------------------</br>
+    <p id="demo1b"></p>
+
+    <script>
+        document.getElementById("demo1b").innerHTML = (5 + 6) * 10;
+    </script></br>
+    ----------------------Assignment operator(=)----------------------------------</br>
+    <p id="demo1c"></p>
+
+    <script>
+        var x, y;
+        x = 5;
+        y = 6;
+        document.getElementById("demo1c").innerHTML = x + y;
+    </script></br>
+
+    --------------=Javascript Keywords(var keywords create
+    variables-----------------------------------------------------------------------------------------------------------</br>
+    <h2>The var Keyword Creates Variables</h2>
+
+    <p id="demo1d"></p>
+
+    <script>
+        var x, y;
+        x = 5 + 6;
+        y = x * 10;
+        document.getElementById("demo1d").innerHTML = y;
+    </script></br>
+    ------------------------js function
+    syntax----------------------------------------------------------------------------------------------</br>
+
+    ----------------------------------------------------------------------------------------------------------------------------------------
+    <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+    <p id="demo1e"></p>
+
+    <script>
+        function myFunction(p1, p2) {
+            return p1 + p2;
+        }
+        document.getElementById("demo1e").innerHTML = myFunction(4, 3);
+    </script></br>
+
+
+
+    <p>This example calls a function which performs a calculation and returns the result:</p>
+
+    <p id="demo1f"></p>
+
+    <script>
+        var x = myFunction(4, 3);
+        document.getElementById("demo1f").innerHTML = x;
+
+        function myFunction(a, b) {
+            return a % b;
+        }
+    </script>
+
+
+
+
+
+    <p>Outside myFunction() carName is undefined.</p>
+
+    <p id="demo1g"></p>
+
+    <p id="demo1h"></p>
+
+    <script>
+        myFunction();
+
+        function myFunction() {
+            var carName = "Volvo";
+            document.getElementById("demo1g").innerHTML =
+                typeof carName + " " + carName;
+        }
+
+        document.getElementById("demo1h").innerHTML =
+            typeof carName;
+    </script>
+
+
+
+
+    ------------------------js
+    object--------------------------------------------------------------------------------------------------------</br>
+    -----------------------------------------------------------------------------------------------------------------------------------------
+
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo1i"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+        // Display some data from the object:
+        document.getElementById("demo1i").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+    </script></br>
+
+
+
+    <p>There are two different ways to access an object property.</p>
+
+    <p>You can use person.property or person["property"].</p>
+
+    <p id="demo1j"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566
+        };
+        // Display some data from the object:
+        document.getElementById("demo1j").innerHTML =
+            person.firstName + " " + person.lastName + " " + person.id;
+    </script></br>
+
+
+
+
+    ---------------------------js object this
+    method---------------------------------------------------------------------------------------------------------------------------------</br>
+    <p>An object method is a function definition, stored as a property value.</p>
+
+    <p id="demo1k"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        // Display data from the object:
+        document.getElementById("demo1k").innerHTML = person.fullName();
+    </script></br>
+
+
+    --------------------------------Js
+    events----------------------------------------------------------------------------------------------</br>
+
+    --------------------------------HTML
+    events--------------------------------------------------------------------------------------------</br>
+    <button onclick="document.getElementById('demo1l').innerHTML=Date()">The time is?</button>
+
+    <p id="demo1l"></br>
+
+        -------------------</br>
+        <button onclick="this.innerHTML=Date()">The time is Now?</button></br>
+        return.this()
+
+        -------------------</br>
+
+    <p>Click the button to display the date.</p>
+
+    <button onclick="displayDate()">The current time is ?</button>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo1m").innerHTML = Date();
+        }
+    </script>
+
+    <p id="demo1m"></p></br>
+
+
+
+    ------------------------------Javascript
+    Strings-------------------------------------------------------------------------------------</br>
+
+    -------------------------------Js
+    string---------------------------------------------------------------------------------------------</br>
+
+    <p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+    <p id="demo1n"></p>
+
+    <script>
+
+        var carName1 = "Volvo XC60"; // Double quotes
+        var carName2 = 'BNW'; // Single quotes
+
+        document.getElementById("demo1n").innerHTML =
+            carName1 + " " + carName2;
+
+    </script></br>
+
+    ---------------------------</br>
+    <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+    <p id="demo1o"></p>
+
+    <script>
+        var answer1 = "It's alright";
+        var answer2 = "He is called 'Johnny'";
+        var answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo1o").innerHTML =
+            answer1 + "<br>" + answer2 + "<br>" + answer3; 
+    </script></br>
+
+    -------String Length------------------------</br>
+
+    <p>The length property returns the length of a string:</p>
+
+    <p id="demo1p"></p>
+
+    <script>
+        var txt = "ABCDE";
+        var sln = txt.length;
+        document.getElementById("demo1p").innerHTML = sln;
+    </script></br>
+    ---------Escape Characters-----------------------------------</br>
+
+    <p>The escape sequence \" inserts a double quote in a string.</p>
+
+    <p id="demo1q"></p>
+
+    <script>
+        var x = "We are the so-called \"Vikings\" from the north.";
+        document.getElementById("demo1q").innerHTML = x; 
+    </script></br>
+
+    ----------</br>
+    <p>The escape sequence \\ inserts a backslash in a string.</p>
+
+    <p id="demo1r"></p>
+
+    <script>
+        var x = "The character \\ is called backslash.";
+        document.getElementById("demo1r").innerHTML = x; 
+    </script></br>
+    ------------</br>
+
+    <p id="demo1s"></p>
+
+    <script>
+        var x = "John";        // x is a string
+        var y = new String("John");  // y is an object
+
+        document.getElementById("demo1s").innerHTML =
+            typeof x + "<br>" + typeof y;
+    </script></br>
+
+    ------------------</br>
+    <h2>Never Create Strings as objects.</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="demo1t"></p>
+
+    <script>
+        var x = "John";        // x is a string
+        var y = new String("John");  // y is an object
+        document.getElementById("demo1t").innerHTML = (x == y);
+    </script></br>
+    -----------------------</br>
+
+    <h2>Never Create Strings as objects.</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="demo1u"></p>
+
+    <script>
+        var x = "John";        // x is a string
+        var y = new String("John");  // y is an object
+        document.getElementById("demo1u").innerHTML = (x === y);
+    </script></br>
+    /*because X and Y are different object*/</br>
+
+
+
+
+    --------------------------Javascript String Method------------------------------------------------------------------------------------------</br>
+    ---------Finding a string in a string (str.indexof)---------------------</br>
+
+    <p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+    <p id="demo1v"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("occurs");
+        document.getElementById("demo1v").innerHTML = pos;
+    </script></br>
+    <p>indexof() and search() are the same in result</p>
+    ----------(lastindexof)----------------------</br>
+
+    <p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+    <p id="demo1w"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate");
+        document.getElementById("demo1w").innerHTML = pos;
+    </script></br>
+
+    -------------(From the last position)---------------------</br>
+
+    <p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+
+    <p id="demo1x"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate", 15);
+        document.getElementById("demo1x").innerHTML = pos;
+    </script></br>
+
+    ------------(LastIndexof method)----------------------------</br>
+
+    <p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p>
+    <p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15,
+        and search to the beginning.</p>
+    <p>Position 15 is position 15 from the beginning.</p>
+
+    <p id="demo1y"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate", 15);
+        document.getElementById("demo1y").innerHTML = pos;
+    </script></br>
+
+
+    -------str.slice() method with two parameters----------------</br>
+
+
+    <p>The slice() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo1z"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(15, 19);
+        document.getElementById("demo1z").innerHTML = res; 
+    </script></br>
+
+    --------------------</br>
+
+
+    <p>The slice() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo2a"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7);
+        document.getElementById("demo2a").innerHTML = res;
+    </script>
+    <p>substring() mehtod is similsr to str.slice() method</p>
+
+
+    ----substr()method--------</br>
+
+    <p>The substr() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+
+    <p id="demo2b"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substr(7, 6);
+        document.getElementById("demo2b").innerHTML = res;
+    </script></br>
+
+    -------Replacing String Content----------str.replace()-----------------------------------------------------</br>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo2c">Please visit Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo2c").innerHTML;
+            var txt = str.replace("Microsoft", "W3Schools");
+            document.getElementById("demo2c").innerHTML = txt;
+        }
+    </script></br>
+
+    -----use /i flag with replace() in case insensetive--</br>
+
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo2d">Please visit Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo2d").innerHTML;
+            var txt = str.replace(/MICROSOFT/i, "W3Schools");
+            document.getElementById("demo2d").innerHTML = txt;
+        }
+    </script></br>
+
+    -------use /g flag with replace() for case global match-----</br>
+
+    <p>Replace all occurrences of "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo2e">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo2e").innerHTML;
+            var txt = str.replace(/Microsoft/g, "W3Schools");
+            document.getElementById("demo2e").innerHTML = txt;
+        }
+    </script></br>
+
+    ------------</br>
+
+
+
+    --------------------------------Converting to Upper and Lower case----------------------</br>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo2f">Hello World!</p>
+
+    <script>
+        function myFunction() {
+            var text = document.getElementById("demo2f").innerHTML;
+            document.getElementById("demo2f").innerHTML = text.toUpperCase();
+        }
+    </script>
+
+
+    <p>Same in the case if Lower case</p></br>
+
+    -------Concat Method---------------------------------------------------------------------</br>
+
+    <p>The concat() method joins two or more strings:</p>
+
+    <p id="demo2g"></p>
+
+    <script>
+        var text1 = "Hello";
+        var text2 = "World!";
+        var text3 = text1.concat(" ", text2);
+        document.getElementById("demo2g").innerHTML = text3;
+    </script></br>
+
+
+    ---------String.Trim()----------(str.trim)--------------------------------------------------------</br>
+
+
+    <p>Click the button to alert the string with removed whitespace.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
+
+    <script>
+        function myFunction() {
+            var str = "     Hello World!     ";
+            alert(str.trim());
+        }
+    </script></br>
+    -----------------------------
+    --------Javascript Padding---------------------------------------------</br>
+    ---let str.padStart()---------</br>
+
+    <p>The padStart() method pads a string with anoter string:</p>
+
+    <p id="demo2h"></p>
+
+    <script>
+        function f() {
+            let str = "5";
+            str = str.padStart(4, 0);
+            alert(str);
+            document.getElementById("demo2h").innerHTML = str;
+        }
+
+    </script>
+    <button onclick="f()">hey click here</button>
+    </p>same as let str.PadEnd()</br>
+
+    -------------------------------------------Javascript
+    Numbers------------------------------------------------------------------------</br>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

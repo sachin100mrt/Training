@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p id="num"></p>
+    <script>
+        var x = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+        var y = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+            y = [i % 2];
+            if (y[0] == 0)
+                document.getElementById("num").innerHTML += i + ",";
+            //console.log(i);
+        }
+    </script>
+    -------------------------------------------------------------------------------------------------------</br>
+
+    <p id="num1"></p>
+    <script>
+        // console.log(x); 
+        var x = "*";
+       //console.log(x);
+
+        for (x = 0; x < 5; x++)
+    
+        console.log(x + 1);
+{        
+ //           console.log(x);
+            // document.getElementById("num1").innerHTML += x+"," ;
+          //  console.log(x);
+        }    
+    </script>
+    -------------------------------------------------------------------------------------------------------</br>
+
+
+
+
+    <button onclick="myFunction()">Click Me</button>
+
+    <p id="demo2w"> Shantanu .</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo2w").innerHTML;
+            var y = x.replace(/a/g, "A");
+            document.getElementById("demo2w").innerHTML = y;
+        }
+    </script></br>
+
+
+
+
+
+
+
+</body>
+
+</html>

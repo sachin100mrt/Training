@@ -16,3 +16,26 @@ h1 {
           font-variant:small-caps;
           margin-top:15px;
         }
+td{
+    color: red;
+      
+}
+tr{
+    color:yellowgreen;
+}
+input{
+    color:lightsalmon;
+}
+table{
+    cellpadding: 8px;
+}
+
+
+
+
+
+
+
+
+
+

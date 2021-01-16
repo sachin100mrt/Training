@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
-
+      
 <head>
-  <link rel="stylesheet" type="text/css" href="./../css/syntax.css">
-  
+  <link rel="stylesheet" type="text/css" href="./../css/syntax.css">  
+  <script type="text/javascript" src="./../javascript/code.js"></script>
 </head>
 
 <body>
   <table border="1" width="100%" height="100%">
     <tr>
       <td><img src="./images/logo.png" width="200" alt="Test Image"></td>
-
       <td rowspan="1" colspan="4" width="40%" height="300%" align="center">
         <h2><b>AARFID India Pvt Ltd </b></h2>
       </td>
-
       <td rowspan="1" colspan="2" align="center">
         <h3><b>Search</b></h3>
       </td>
     </tr>
-    </tr>
     <tr>
-
-
       <td colspan="5" width="100" align="center">
         <marquee direction="up">This is AARFID India pvt. ltd</marquee>
       </td>
-
       <td>Click to Email</td>
       <td></td>
     </tr>
@@ -43,9 +37,7 @@
           </br>
           Some LI item, some hyperlinks, some frames.
           </br>
-
           <ul>
-
             <li>Create web site</li>
             <br>
             <li>Become a web designer</li>
@@ -55,51 +47,41 @@
             <li>Learn other Languages</li>
             </br>
             <li>HTML</li>
-
           </ul>
-
-
         </h3>
       </td>
       <td></td>
       <td></td>
-
     </tr>
     <tr>
-
       <td><a href="./marquees.html" />Overview</a></td>
       <td>Name</td>
-      
-      <td form>
-          <input type="text" name="first_name" /></form>
-        </td>
-
+      <td>
+        <input type="text" id="txtFirstName" onchange="onDataChange(this)" /></form>
+      </td>
     </tr>
     <tr>
       <td><a href="./Assignment 2.html" />Basic Tags</a></td>
       <td>Phone No.</td>
-      <td form>
-        <input type="text" name="first_name" /></form>
+      <td>
+        <input type="text" id="txtPhoneNo" onchange="onDataChange(this)" /></form>
       </td>
-
     </tr>
     <tr>
       <Td><a href="./tables.html" />Element</a></Td>
-
-      <td>Gender</td>
+      <td>
+      <button type = "button"
+     onclick="document.getElementById(Gender).innerHTML='Male'">Gender</button>
+     </td>
       <td>
         <input type="radio" name="gender" value="on">Male
         <input type="radio" name="gender" value="female">Female
-
-
-      </td>
-
-    </tr>
+        </td>
+      </script>
+        </tr>
     <tr>
       <td><a href="./frames.html" />Attributes</a></td>
-
       <td>Country</td>
-
       <td>
         <select name="dropdown">
           <option value="India" selected>India</option>
@@ -120,24 +102,20 @@
       </td>
     </tr>
     <tr>
-      <td>row 9 cell 1</td>
+      <td></td>
       <td></td>
       <td><input type="button" value="Save"></input></td>
     </tr>
     <tr>
       <td><img src="./images/fullfish.jpg" width="200" alt="Test Image"></td>
-<td  rowspan="2" colspan="2"><img src="./images/returningfish.png" width="100" alt="Test Image">
-       </td>
+      <td rowspan="2" colspan="2"><img src="./images/returningfish.png" width="100" alt="Test Image">
+      </td>
     </tr>
     <tr></tr>
     <tr>
-      
-      
       <td><a href="mailto:abc@example.com">Send Email</a>
-
-    </td>
-
-      <td colspan="2" align="center">        
+      </td>
+      <td colspan="2" align="center">
         <h3>Click to Email</h3>
       </td>
     </tr>
@@ -148,6 +126,7 @@
           @ Copyright 2020. All Right Reserved.</h2>
       </td>
     </tr>
-  </table>
+  </table>  
 </body>
+
 </html>

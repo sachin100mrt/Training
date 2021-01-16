@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./../css/inclusion.css">
+    <title>STUDENT REGISTRATION FORM</title>
+</head>
+ <body>
+    <fieldset bgcolor="blue">
+        <legend>
+            <h2> STUDENT REGISTRATION FORM</h2>
+        </legend>
+        <table border="0" align="center" style="color:darkorange;" cellpadding="8" >
+            <tr>
+                <td><label for="fname">FIRST NAME:</label></td>
+                
+                <td><input type="text" id="fname" name="Firstname" size="60%" value=""required/>(max 30 characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td><label for="lname">LAST NAME :</label></td>
+                <td><input type="text" size="60%" id="lname" name="Lastname" />(max 30 characters a-z andA-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="submit" name="submit" value="Day" />
+                    <input type="date" id="datemim" min="2020-01-02">
+                    <select name="dropdown">
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28" selected>28</option>
+                    </select>
+                    <input type="submit" name="submit" value="Month" />
+                    <select name="dropdown" size="1">
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September" selected> September</option>
+                    </select>
+                    <input type="submit" name="submit" value="Year" />
+                    <select name="dropdown" size="1" multiple>
+                        <option value="1973">1973</option>
+                        <option value="1974">1974</option>
+                        <option value="1975">1975</option>
+                        <option value="1976">1976</option>
+                        <option value="1977">1977</option>
+                        <option value="1978" selected>1978</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="text" size="40%" Id="Emailid" multiple></td>
+            </tr>
+            <tr>
+                <td>MOBILE NO.</td>
+                <td><input type="text" size="40%" Name="txtPhoneNo" 
+                        placeholder="012-3456-789"
+                        pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"></td>
+            </tr>
+            <td>GENDER</td>
+            <td>
+                <input type="radio" name="gender" value="on" checked>Male
+                <input type="radio" name="gender" value="female">Female
+            </td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td><textarea name="Address" rows="5" cols="100"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" size="40%" Id="City"></td>
+            </tr>
+            <tr>
+                <td>PIN CODE</td>
+                <td><input type="text" size="40%" Id="Pincode" maxlength="8" size="8"></td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" size="40%" Id="State"></td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text" size="40%" Id="Country"></td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td>
+                    <input type="checkbox" name="Drawing" checked>Drawing
+                    <input type="checkbox" name="Singing">Singing
+                    <input type="checkbox" name="Dancing">Dancing
+                    <input type="checkbox" name="Sketching">Sketching
+                    <input type="checkbox" name="Others">Others
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2><input type="submit" size="40" name="submit" value="submit"></h2>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
+
+
+
+<!--<form action="/action_page.php">-->
+
+ <!--<label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit">-->
+</form>
+
+
+<div class="dropdown show">
+    <div class="input-group date" data provide="datepicker">
+<a class="btn btn-light dropdown-toggle border border-dark bg-light" href="#" role="button" id="dropdownMenuLink"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Date</a>

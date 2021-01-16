@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myFunction3d() {
+            document.getElementById("btnsave").innerText = document.getElementById("txtName").value
+        }
+    </script>
+</head>
+
+<body> 
+    <p> Reading the text Box Value and Writing on the Button when click the button ;</p> 
+    Name: <input type="text" id="txtName" size="50%" value=""  onkeyup="myFunction3d()">
+    <button id="btnsave" type="button" onclick="myFunction3d()">
+         On Key Press
+    </button></br>
+
+       -------------------------</br>
+
+    Name: <input type="text" id="txtName" size="50%" value=""  onchange="myFunction3d()">
+    <button id="btnsave" type="button" onclick="myFunction3d()">
+        On change
+    </button>
+
+
+
+
+
+</body>
+
+</html>

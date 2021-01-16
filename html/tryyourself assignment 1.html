@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script>
+        function myFunction3e() {
+            document.getElementById('txtName').value = " I am doing good.";
+        }
+        function myFunction3d() {
+            document.getElementById("txtName").innerHTML = "";
+            var click = document.getElementById("txtName").value
+            alert(click);
+        }
+        function getInputValue() {
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            // Displaying the value
+            alert(inputVal);
+        }
+        function ClickMenu(id) {
+            var SelectedMenu;
+            SelectedMenu = document.getElementById(id).value;
+            alert("You already clicked " + SelectedMenu);
+        }
+        function myFunction3d() {
+            document.getElementById("txtName").innerHTML = "";
+            var click = document.getElementById("txtName").value
+            alert(click);
+        }
+    </script>
+</head>
+<body>
+    Name: <input type="text" id="txtName" size="50%" value="">
+    <button id="btnsave" type="button" onclick="myFunction3d('txtName')">
+        Click On Button
+    </button></br>
+    ----------------------------------------------------------------------------------</br>
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button></br>
+   -------------------------------------------------------------------------------------</br>
+    Name: <input type="text" id="txtName" size="50%" value="Myself Sachin Garg">
+    <button id="btnSave" type="button" onclick="myFunction3e('txtName')">
+        Click On Button
+    </button></br>
+
+-------------------------------------------------------------------------------------------</br>
+    <form id="form1" runat="server">
+        <div>
+            <table id="Table1" runat="server">
+                <tr>
+                    <td>
+                        <input id="Button1" type="button" value="Menu-1" language="javascript"
+                            onclick="return ClickMenu('Button1')" />
+                        <input id="Button2" type="button" value="Menu-2" language="javascript"
+                            onclick="return ClickMenu('Button2')" />
+                        <input id="Button3" type="button" value="Menu-3" language="javascript"
+                            onclick="return ClickMenu('Button3')" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+</body>
+
+</html>

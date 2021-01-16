@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head></head>
+<html>
+<body>
+    <button onclick="myFunction()">Click Me</button>
+
+    <p id="demo2w"> Sachin .</p>
+
+    <script>
+        function myFunction() {
+            var str = document.getElementById("demo2w").innerHTML;
+            var txt1 = str.replace(/a/g, "A");
+           // var txt2 = txt1.replace("B.Tech", "M.tech");
+            
+            document.getElementById("demo2w").innerHTML = txt1;
+        }
+    </script></br>
+
+    ------------------------------------------------
+    <p id="demo2v"></p>
+    <button type="button" onclick='myFunction3a("demo2v")'>
+        <h2><b>Click On Button</b></h2>
+    </button>
+    <script>
+        function myFunction3a() {
+            document.getElementById("demo2v").innerHTML = " I am doing good.";
+    </script></br>
+    ---------------------------------------------------------
+    <p id="demo3a"></p>
+    <button type="button" onclick="myFunction1a('demo3a')">Try it</button>
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+    <script src="./../javascript/myScript.js"></script></br>
+-------------------------------------------------------------</br>
+<input type="text" id="demo2y" value="My name is Sachin. I have done BCA before Ninteen years ago.">
+<button type="button"onclick="myFunction3b('demo2y')" >
+        <h2><b>Click On Button</b></h2>
+    </button>
+</input>    
+    <script>
+        function myFunction3b() {
+            document.getElementById("demo2y").innerHTML=""; }
+    </script></br>
+-----------------------------------------------------------------------</br>
+Name: <input type="text" id="myText" size="50%" value="My name is Sachin. .">
+<p>Click the button to change the value of the text field.</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+//  document.getElementById("myText").value = "My name is Sachin. I have done BCA before Ninteen years ago.";
+}
+</script>
+
+
+
+<p id="done"></p>
+<button type="button" onclick="myFunction1a1('done')">Try it</button>
+<p>(myFunction is stored in an external file called "Practice.js" s.no:- 2-4)</p>
+<script src="./../javascript/practice.js"></script>
+
+
+
+</body>
+</html>
+
+
+
